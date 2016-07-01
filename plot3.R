@@ -1,0 +1,6 @@
+with(power2, plot(ts2, Sub_metering_1, type="l", ylab="Energy sub metering", xlab=""))
+with(power2, lines(ts2, Sub_metering_2, col="red"))
+with(power2, lines(ts2, Sub_metering_3, col="blue"))
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black","red","blue"), lwd=1)
+dev.copy(png,"plot3.png")
+dev.off()
